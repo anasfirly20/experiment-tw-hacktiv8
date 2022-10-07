@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="retro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: cursive;
+        }
+        .title {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .sub-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            opacity: 0.5;
+
+        }
+        .my-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .category {
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-container header">
+        <div>
+            <h1 class="title text-3xl font-bold">Useful Website</h1>
+            <h4 class="sub-title">For Developers</h4>
+        </div>
+        <div>
+            <img src="https://statics.hacktiv8.com/images/logo/hacktiv8-dark.webp" 
+            alt="logo hacktiv8" width="150px">
+        </div>
+    </div>
+    <div class="my-container mt-5">
+        <h3 class="category flex">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="width: 20px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+              </svg>
+            Dev Challenges
+        </h3>
+        <div class="grid gap-4 grid-cols-3 mt-5">
+            <div class="">
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="Responsive_Thumb.svg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Responsive Web Developer</h2>
+                      <p>Learn and Practice Responsive Web Development by building 8 Websites with given designs.</p>
+                      <div class="card-actions justify-end mt-3">
+                        <a href="https://devchallenges.io/paths/responsive-web-developer"
+                        target="_blank"
+                        class="btn btn-primary btn-block">Open</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="">
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="Frontend_thumb.svg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Front-end Developer</h2>
+                      <p>Become Front-end Developer by building 8 real-life projects, you can use any Front-end frameworks.</p>
+                      <div class="card-actions justify-end mt-5">
+                        <a href="https://devchallenges.io/paths/front-end-developer"
+                        target="_blank" 
+                        class="btn btn-primary btn-block">Open</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="">
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="Fullstack_thumb.svg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Full-stack Developer</h2>
+                      <p>Become a Full-stack developer by building 8 advanced full-stack web applications.</p>
+                      <div class="card-actions justify-end mt-10">
+                        <a href="https://devchallenges.io/paths/full-stack-developer" 
+                        target="_blank" 
+                        class="btn btn-primary btn-block">Open</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
